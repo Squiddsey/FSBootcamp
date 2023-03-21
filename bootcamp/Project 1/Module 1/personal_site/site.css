@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&family=Playfair+Display:wght@500&family=Poppins&display=swap');
+
+/*Color scheme is bad! But fine for now.*/
+
+
+* { /* makes all elements border-box */
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin:0 auto;
+    background-color:rgb(245, 241, 217);
+    font-family:Lato, Helvetica, sans-serif;
+}
+
+main{
+    text-align:left;
+    margin:0 auto;
+    background-color:rgb(198, 255, 220);
+    box-shadow: rgb(85, 72, 1) 0px 0px 12px -2px;
+    min-height: 100vh; /*makes the main section take up 100%*/
+    max-width:65vw; /*main takes up max of 65% of viewport's width*/
+}
+header {
+    font-size: 2rem; /* 32px basically*/
+    background-color: azure;
+    padding: 0em 1em 0em 1em;
+    font-family: Poppins, Helvetica, sans-serif;
+    position:fixed;
+    top:0;
+    min-width:100%; /*this ensures header stretches across viewport fully*/
+    box-shadow: 0 2px 4px -1px rgb(51, 87, 5);
+    overflow:auto;
+}
+
+.header-ul {                             /*I utilized uls to make the nav bar for header and footer */
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    margin: 0;
+
+
+}
+
+h1{
+    font-size:2em;
+    font-family:'Bebas Neue', Helvetica, sans-serif;
+    
+}
+
+footer {
+    background-color: azure;
+    margin: 0;
+    text-align: center;
+    position:fixed;
+    bottom:0;
+    min-width: 100%;
+    box-shadow: 8px 2px 10px 1px rgb(0, 0, 0); /*looks more 3D with the shadow */
+    overflow:auto;
+}
+.name {
+    margin: 0.5em;
+    display: inline-block;
+    padding: 0;
+}
+header li a:hover{ /*changes color when hovering*/
+    color:rgb(25, 175, 125);
+    transition:0.2s;
+}
+
+.footerlogo {
+    width: 40px;
+    height: 40px;
+    border-radius: 85%;
+    margin:0px 30px;
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+li {
+    margin: 0 0.5em 0 0;
+    padding: 0.5em 0.5em 0em 0.5em;
+    display: inline-block;
+
+}
+
+.header-ul a.current { /* this puts a black underline beneath the current page in the nav bar */
+  border-bottom: 1px solid black;   
+  
+}
+
+p{
+    line-height: 1.5; /* for increased readability*/
+}
+

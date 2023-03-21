@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&family=Playfair+Display:wght@500&family=Poppins&display=swap');
+
+main {
+    font-size: 1.5em;
+    padding: 75px 25px;
+   
+
+}
+h1{
+    font-family:'Bebas Neue', Helvetica, sans-serif;
+    font-size:1.5em;
+    text-align: left;
+    margin:1em 0em 0em 0.5em;
+   
+}
+h2{
+    text-shadow: rgb(0, 56, 5) -1px 0px 2px;;
+}
+section {
+    border-top: 1px solid rgb(1, 88, 37);
+    box-sizing: border-box;
+    padding: 2em 1em;
+    max-width: 65vw;
+    margin: 0 auto;
+    
+   
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+p {
+    line-height: 1.5;
+
+}
+
+.gaming-section,
+.hiking-section,
+.reading-section {
+    text-align: left;
+    font-size:1em;
+    font-family:'Lato', Helvetica, sans-serif;
+    overflow: auto;
+}
+
+.books,
+.gaming {
+    float: left;
+    margin: 0px 25px 25px 25px;
+    
+    border:5px groove black;
+
+}
+
+.hiking {
+    float: right;
+    overflow: auto;
+    margin: 0px 25px 25px 25px;
+    border:2px solid black;
+}
+
+.cleared-left{              /* clears floats to the left;
+                            i didn't set a clear:right for the hiking 
+                            section due to lack of need (not enough text for 
+                            the clear to be noticeable) */ 
+    clear:left;
+}

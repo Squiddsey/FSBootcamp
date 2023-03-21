@@ -1,0 +1,60 @@
+.message-form{
+    width:600px;
+    font-family: 'Times New Roman', Times, serif;
+    background: coral;
+    box-sizing: content-box;
+}
+
+.message-form-inputs{
+    padding:8px;
+    background-color: cornflowerblue;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: content-box;
+    
+}
+
+.message-form-actions{
+    background-color: thistle;
+    padding:8px;
+    overflow:auto;
+    box-sizing: content-box;
+}
+
+button{
+    float:right;
+    background-color: aquamarine;
+    margin:8px;
+    padding:16px;
+    border:none;
+    box-shadow: 40px black;
+    font-size:16px;
+    box-sizing: content-box;
+}
+i.material-icons.small{
+    font-size:16px;
+    margin-left:8px;
+}
+.message-form-inputs > * {
+    display:block;
+    width:100%;
+}
+.message-title{
+    padding:100px;
+}
+
+textarea{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: content-box;
+}
+
+label{
+    margin:8px;
+    box-sizing: content-box;
+}
+
+input{
+
+    box-sizing: content-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

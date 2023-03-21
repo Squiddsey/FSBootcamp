@@ -1,0 +1,23 @@
+.categories{
+    display:flex;
+    flex-direction: column;
+    flex:0 0 256px;
+    padding:2em;
+}
+
+.categories > a{
+text-decoration: none;
+font-family:'Dosis', Times, serif;
+text-transform: uppercase;
+text-align: center;
+padding:1.5em 1em;
+margin-bottom:8px;
+background-color: rgb(35, 35, 172);
+color:azure;
+}
+
+
+.categories > a:hover{
+background-color: rgb(19, 19, 114);
+box-shadow: 0 2px 5px -2px black;
+}

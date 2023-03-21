@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&family=Playfair+Display:wght@500&family=Poppins&display=swap');
+
+
+
+
+
+main {
+    font-size: 24px;
+    padding: 5em 1em 5em 1em;
+    font-family:Lato, Helvetica, sans-serif;
+  
+  
+}
+h1{
+    font-family:'Bebas Neue', Helvetica, sans-serif;
+    font-weight: 700;
+    margin:0 0 1em 0;
+    text-shadow:rgb(255, 255, 255) 5px 5px 1px; /*Might be hard to see, potentially change to something more visible*/
+}
+blockquote {
+    padding:4em 2em;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Playfair Display', Helvetica, sans-serif;
+    text-shadow: rgb(255, 255, 255) 2px 2px 2px;
+    color:rgb(0, 0, 0);
+
+}
+

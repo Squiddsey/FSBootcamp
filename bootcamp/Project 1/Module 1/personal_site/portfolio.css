@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@500&family=Poppins&display=swap');
+
+
+
+main {
+
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 5em 1em 5em 1em;
+    
+}
+
+
+
+
+section {
+    max-width:55vw;
+    min-height:8em; /* honestly not sure the best height to set for this, but this works for now on all viewports i tried!*/
+    background-color:#fbfde0;
+    padding: 0.5em;
+    margin: 2em auto;
+    box-shadow: 5px 10px 5px #70806B;
+    border-style:groove;
+    overflow:auto;
+    
+
+}
+
+
+
+h1{
+    font-family:'Bebas Neue', Helvetica, sans-serif;
+    border-bottom:2px solid black;
+    text-shadow:  2px 2px 2px azure;
+   
+}
+
+h2 {
+    text-decoration: underline;
+
+
+  
+}
+
+
+
+.pic1,
+.pic3 {
+    float: left;
+    margin: 0em 1em 3em 0em; /*3em for margin-bottom to push text to the right*/
+
+   
+   
+}
+.clear-right{
+    clear:right;
+}
+.clear-left{
+    clear:left;
+}
+.pic2 {
+    float: right;
+    margin: 0em 0em 1em 1em;
+}
+.pic1,
+.pic2,
+.pic3{
+    height:180px;
+    width:320px;
+}
