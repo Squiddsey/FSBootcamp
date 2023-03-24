@@ -1,0 +1,97 @@
+.items { /*FOR THE WHOLE ITEM CARD SECTION*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: inherit;
+    align-items: flex-start;
+    flex-grow: 1;
+    /* this ensures that the space for this class fills the space of the <main> container*/
+
+    gap: 10px;
+
+}
+
+.item {  /*FOR EACH SPECIFIC ITEM CARD*/
+    display: flex;
+    flex-direction: column;
+    flex-basis: 5em;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 0px 12px 12px 0px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* these specific values make it look paper-like; i nabbed this from an example from w3schools (https://www.w3schools.com/css/css3_shadows_box.asp) */
+ 
+    background-color: rgb(204, 228, 228);
+}
+
+.item-name,
+.fact-line {
+    background-color: rgb(6, 160, 108);
+    display: flex;
+
+    padding: 12px;
+    color: azure;
+
+}
+
+.fact-line {
+    font-size: 16px;
+    justify-content: flex-end;
+
+}
+
+.item-name {
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.fact-name {
+    margin: 0em 1em 0em 0em;
+}
+
+.add-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(7, 107, 74);
+    color: azure;
+    text-shadow: 1px 1px 2px black;    /*text shadow to further show it's a button | maybe delete later*/
+    font-size:16px; /*font size changes size of icon!!*/
+    border-radius: 95%;
+    max-width: 36px;
+    max-height: 36px;
+    padding: 8px;
+    flex: 1;
+
+
+}
+
+.item-description {
+    display: flex;
+    align-items: flex-start;
+    padding: 8px;
+    flex: 1;
+}
+
+
+@media screen and (max-width:768px) {
+    .item>* {
+        font-size: 22px;
+    }
+
+    .item {
+        flex-basis: 100%;
+
+        max-height: 768px;
+        /*if not set, item card will vertically extend off screen */
+    }
+
+    .items {
+
+        flex-direction: column;
+        max-width: 768px;
+
+    }
+}

@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+header .main-nav,
+header .sub-nav {
+    display: flex;
+    align-items: center;
+}
+
+.sub-nav {
+  flex:1;
+  padding:8px;
+  justify-content:space-between;
+ 
+}
+.sub-nav > *{
+    margin:16px;
+
+    
+}
+
+.main-nav {
+    background-color: darkcyan;
+    justify-content: space-between;
+}
+
+ul.horizontal.nav-list.full-width {
+    display: none;
+    padding:8px;
+    border-right:1px solid white;
+}
+
+ul.horizontal.nav-list.short-width {
+    display: flex;
+    padding:8px;
+    align-items: center;
+
+}
+
+.nav-list {
+    display: flex;
+    direction: row;
+
+}
+
+.nav-list a {
+    padding: 8px;
+    border-right: 8px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-list li {
+    border-right:1px solid white;
+    list-style-type: none;
+}
+
+.nav-list li:last-of-type {
+    border-right: none;
+}
+
+
+.sub-nav .search-form {
+    display: flex;
+    flex: 1;
+}
+
+.sub-nav button,
+.sub-nav input {
+    padding: 8px;
+    border-style: none;
+    color:azure;
+}
+
+.sub-nav .mag-glass {
+    background-color: darkcyan;
+}
+
+.sub-nav input {
+    border-bottom: 2px solid darkcyan;
+    flex: 1;
+    /*flex rather than flex-grow so that it will shrink as well*/
+   
+}
+
+.company-name {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 8em;
+    flex-shrink: 1;
+    color: darkcyan;
+    text-shadow: 1px 1px 2px black;
+    margin:0px 16px;
+}
+
+.credit-offer {
+    display: flex;
+    font-size: 1.2em;
+    flex-basis: 8em;
+    flex-shrink:1;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 105, 6); /*changed from red to match color scheme more, even though it does not grab as much attention as red*/
+    padding: 8px;
+    text-decoration: none;
+    color: azure;
+    box-shadow: 1px 1px 1px black;
+    margin:0px 16px;
+   
+}
+
+@media screen and (min-width:769px) { /*hide menu icon when screen is above 769px, show it when below*/
+    ul.horizontal.nav-list.full-width  {
+        display: flex;
+        align-items: center;
+    }
+
+    ul.horizontal.nav-list.short-width {
+        display: none;
+    }
+}

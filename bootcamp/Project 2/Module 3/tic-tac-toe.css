@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+.board{
+    display:flex;
+    height:360px;
+    width:360px;
+    flex-wrap:wrap;
+}
+
+.cell{
+    flex-basis:120px;
+  
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.cell:nth-child(3n+2){
+    border-left:1px solid black;
+    border-right:1px solid black;
+
+}
+
+.cell:nth-child(n+4):nth-child(-n+6){
+   border-top:1px solid black;
+   border-bottom:1px solid black;
+}
+
+
+/*
+.cell:nth-child(10n+2){
+    border-top:none;
+}
+
+.cell:nth-child(2n+2){
+    border-bottom:none;
+}
+
+.cell:nth-child(3n){
+    border:none;
+}
+
+*/
+
+/*:nth-child(3n+2) selects middle row vertically
+
+
+:nth-child(n+4):nth-child(-n+6) selects middle row horizontally*/
