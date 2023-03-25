@@ -1,0 +1,41 @@
+footer{
+    display:flex;
+    flex-direction:row;
+    background-color:rgb(29, 112, 87);
+    padding:1rem;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+}
+section{
+    margin-right:1em;
+    display:flex;
+    flex-direction: column;
+}
+
+section:last-child{
+    margin-right:0;
+}
+
+h2{
+    color: white;
+    border-bottom: 1px solid white;
+    margin-bottom:8px;
+    padding-bottom:8px;
+    font-size:1em;
+    letter-spacing: 1.4px; /* 2px looks like too much, 1.4-1.6 looks fine*/
+}
+
+section > a{
+    color:white;
+    text-decoration: none;
+    font-weight:bold;
+    margin-bottom:8px;
+    font-size:0.8em;
+    align-self:flex-start; /*without this, underline under footer will stretch beyond the word*/
+}
+
+section > a:hover{
+    border-bottom:1px solid white;
+    margin-bottom:7px;
+    
+}

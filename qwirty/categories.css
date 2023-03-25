@@ -1,0 +1,34 @@
+.categories{
+    display:flex;
+    flex-direction: column;
+    flex:0 0 256px; 
+    padding:2em;
+    
+}
+
+.categories > a{
+text-decoration: none;
+font-family:'Dosis', Times, serif;
+text-transform: uppercase;
+text-align: center;
+padding:1.5em 1em;
+margin-bottom:8px;
+background-color: rgb(7, 107, 74);
+color:azure;
+box-shadow:  0 1px 4px -2px black; /*shadow to make it look more like a button*/
+
+}
+
+
+.categories > a:hover{
+background-color:rgb(22, 172, 122);
+box-shadow: 0 2px 5px -1px black; /*increased box shadow by 1px to emphasize button when hovered*/
+}
+
+/* @media screen and (max-width:768px) {
+.categories{
+    display:none;
+}
+}
+
+this will remove the nav entirely if screen is above 769px width*/

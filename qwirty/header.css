@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+header .main-nav,
+header .sub-nav {
+    display: flex;
+    align-items: center;
+}
+
+.sub-nav {
+  flex:1;
+  padding:8px;
+  justify-content:space-between;
+}
+.sub-nav > *{ /*give all descendents of .sub-nav a margin of 16px*/
+    margin:16px;
+}
+
+.main-nav {
+    background-color: rgb(29, 112, 87);
+    justify-content: space-between;
+}
+
+ul.horizontal.nav-list.full-width {
+    display: none;
+    padding:4px;
+    border-right:1px solid white;
+}
+
+ul.horizontal.nav-list.short-width {
+    display: flex;
+    padding:8px 4px 4px 4px; /*top padding of 8 to vertically align with the lefthand links*/
+    align-items: baseline;
+}
+
+.nav-list {
+    display: flex;
+    direction: row;
+}
+
+.nav-list a {
+    padding: 8px;
+    border-right: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li {
+    border-right:1px inset white;
+    list-style-type: none;
+}
+
+.nav-list li:last-of-type {
+    border-right: none;
+}
+
+header li a:hover{ /*changes color when hovering*/
+    color:rgb(96, 236, 190);
+    transition:0.2s;
+}
+
+nav.sub-nav form.search-form {
+    display: flex;
+    flex: 1;
+}
+
+nav.sub-nav input {
+    padding: 8px;
+    border-style: none;
+    color:rgb(0, 0, 0);
+}
+
+nav.sub-nav .mag-glass {
+    background-color: rgb(29, 112, 87);
+    padding:8px; 
+    border-style:none;
+    color:#eee;
+}
+
+nav.sub-nav .mag-glass:hover{
+    background-color:rgb(22, 172, 122);
+}
+
+nav.sub-nav > button:nth-child(3){ /*targets credit button*/
+    border:none;
+    padding:0;
+    margin:0;
+    background-color:#eee; /*match the body color to hide the colored outline of the button*/
+    flex-shrink:0;
+}
+
+nav.sub-nav input {
+    border-bottom: 1px solid rgb(29, 112, 87);
+    flex: 1 1 0%; /*flex rather than flex-grow so that it will shrink as well*/
+   outline:0;
+}
+
+.company-name {
+    font-size: 2em;
+    font-family: 'IM Fell Great Primer SC', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 224px; /*Started at 256px to match categories' flex-basis, then subtracted by 2em to center*/
+    color: darkcyan;
+    margin:0px 16px;
+}
+
+.credit-offer {
+    display: flex;
+    font-size: 1.2em;
+    flex-basis: 8em;
+    flex-shrink:1;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(182, 59, 55); /*changed from red to match color scheme more, even though it does not grab as much attention as red*/
+    padding: 8px;
+    text-decoration: none;
+    color: azure;
+    box-shadow: 1px 1px 1px black;
+    margin:0px 16px;
+}
+
+.credit-offer:hover{
+    background-color: rgb(182, 0, 0);
+    box-shadow: 2px 2px 1px black;
+}
+
+@media screen and (min-width:769px) { /*hide menu icon when screen is above 769px, show it when below*/
+    ul.horizontal.nav-list.full-width  {
+        display: flex;
+        align-items: center;
+    }
+
+    ul.horizontal.nav-list.short-width {
+        display: none;
+    }
+}
