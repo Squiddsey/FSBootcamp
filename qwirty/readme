@@ -1,0 +1,8 @@
+This is my final version of the Qwirty website project. It was a fun project, and I learned quite a bit regarding pseudo-selectors, flexbox,
+and the process of creating a full website (well, a full website with a single page, that is). There are a few alterations I would make if 
+I had more time (and more expertise), such as adding a cool animated border around the 0% Finance button, selecting more interesting fonts, 
+and improving the responsiveness of the site overall. Specifically, I initially planned to play with media queries so that when the screen is 
+less than 768px, the header consists solely of the search bar and a menu icon, the categories are formated into a row flex-direction and 
+laid just underneath the header, and there is only one item card that fits the entirety of the screen (sans header, categories, footer). 
+One of my major criticisms of this site is the overzealous usage of Flexbox - there  are likely more elements that are flexboxes (and not
+just flex items) than not! But overall, I am pleased with the final version of this site (for now) and am happy to have learned so much.
